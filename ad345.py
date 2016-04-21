@@ -19,7 +19,7 @@ ADXL345_BW_RATE_CONF = const(0x0f)
 ADXL345_DATA_FORMAT_CONF = const(0x10)
 ADXL345_ENABLE_MSRM_CONF = const(0x08)
 
-class ADAccel:
+class AD345:
     def __init__(self):
         self.cs_pin = Pin('X5', Pin.OUT_PP, Pin.PULL_NONE)
         self.cs_pin.high()
