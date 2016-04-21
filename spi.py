@@ -1,5 +1,5 @@
+from machine import SPI
 from pyb import Pin
-from pyb import SPI
 
 READWRITE_CMD = const(0x80) 
 MULTIPLEBYTE_CMD = const(0x40)
