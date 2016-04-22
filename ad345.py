@@ -23,7 +23,7 @@ class AD345:
     def __init__(self):
         self.cs_pin = Pin('X5', Pin.OUT_PP, Pin.PULL_NONE)
         self.cs_pin.high()
-        self.spi = SPI(X, SPI.MASTER, baudrate=2000000, polarity=0, phase=1, bits=8)
+        self.spi = SPI(1, SPI.MASTER, baudrate=2000000, polarity=0, phase=1, bits=8)
 
         self.devid = self.read_id()
 
