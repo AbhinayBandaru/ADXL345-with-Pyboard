@@ -38,7 +38,7 @@ class AD345:
 
     def convert_raw_to_g(self, x):
         if x & 0x80:
-            x = x - 256
+            
         return x * self.sensitivity / 1000
 
     def read_bytes(self, addr, nbytes):
