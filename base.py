@@ -1,5 +1,5 @@
-from __future__ import division
-import math
+from machine import math
+import pyb
 
 class ADXL345_Base:
 
